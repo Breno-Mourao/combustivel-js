@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Breno Silva Mourão">
+
+  <!-- Macnismos de busca -->
+  <meta name="rebots" content="index, follow">
+  <meta name="keywords" content="combustivel, combustível, app, wep, webapp, etanol, gasolina, melhor, senai, breno, mourão, desenvolvedor, desenvolvido, noturno, front, end, front-end, ti, html, css, javascript">
+  <meta name="description" content="WebApp desenvolvido pelo aluno de TI do SENAI Breno Silva Mourão, para a Atividade Principal 22 do curos de Desenvolvedor Front-End Noturno.">
+
+  <title>App Combustivel</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>App Melhor combustível para abastecer</h1>
+    </div>
+  </header>
+  <main>
+    <h2 id="result"></h2>
+    <div class="container">
+      <form onsubmit="return false;">
+        <label>Valor da gasolina</label><br>
+        <label>R$</label>
+        <input type="text" id="gasolina" placeholder="0,00" onkeydown="verificarInput(event);">
+        <br>
+        <br>
+        <label>Valor do etanol</label><br>
+        <label>R$</label>
+        <input type="text" id="etanol" placeholder="0,00" onkeydown="verificarInput(event);">
+        <br><br>
+        <button onclick="combustivel();">Calcular</button>
+      </form>
+    </div>
+  </main>
+</body>
+<script src="js/scrpit.js"></script>
+</html>

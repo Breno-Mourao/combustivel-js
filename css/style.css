@@ -1,0 +1,100 @@
+* {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+  padding: 0;
+}
+header h1 {
+  margin: 0;
+  text-align: center;
+}
+main {
+  margin: 50px auto;
+  position: relative;
+  background-image: url(../img/img-posto.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 1024px;
+  height: 600px;
+  border-radius: 15px;
+
+}
+
+
+main h2 {
+  position: absolute;
+  top: 1%;
+  left: 25%;
+  font-weight: 2000;
+  text-align: center;
+  padding: 5px 20px;
+  font-size: 35px;
+  background-color: #fff;
+  opacity: 0.9;
+  border-radius: 15px;
+  color: rgb(251, 153, 25);
+}
+
+main .container {
+  top: 35%;
+  left: 40%;
+  position: absolute;
+  background-color: #fff;
+  opacity: 0.95;
+  border-radius: 15px;
+}
+
+main .container form {
+  padding: 25px;
+  text-align: center;
+  font-size: 25px;
+}
+
+main .container form input {
+  max-width: 75px;
+  height: 25px;
+  border-radius: 5px;
+  font-size: 25px;
+  text-align: right;
+  margin-top: 2px;
+}
+
+main .container form button {
+  padding: 5px 25px;
+  font-size: 25px;
+  background-color: rgb(249, 164, 53);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+}
+
+main .container form button:hover {
+  background-color: rgb(251, 153, 25);
+  cursor: pointer;
+}
+
+
+
+
+@media(max-width: 768px) {
+  main {
+    margin: 50px 0;
+    max-width: 100%;
+    border-radius: 0;
+  }
+  main .container {
+    left: 13%;
+    top: 30%;
+  }
+  main h2 {
+    left: 0;
+  }
+  main .container form {
+    padding: 40px;
+  }
+  main .container form,
+  main .container form input,
+  main .container form button {
+    font-size: 30px;
+  }
+}
