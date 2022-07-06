@@ -26,7 +26,7 @@ function combustivel() {
 }
 
 function verificarInput(event) {
-  var letra = event.ctrlKey;
+  var letra = event.key;
 
   if (letra != 0 && letra != 1 && letra != 2 && letra != 3 && letra != 4 && letra != 5 && letra != 6 && letra != 7 && letra != 8 && letra != 9 && letra != ',' && letra != '.' && letra != 'Tab' && letra != 'Enter' && letra != 'Backspace' && letra != 'Delete' && letra != 'ArrowLeft' && letra != 'ArrowRight') {
   alert('Caractere inválido')
